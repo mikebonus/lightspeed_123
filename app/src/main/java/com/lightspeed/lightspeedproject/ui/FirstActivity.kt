@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_second.recycler_View
 class FirstActivity : AppCompatActivity() {
 
     companion object {
-        var thisVal = 1                 // 1 = 'online-status' && 2 = 'offline'..
+        var onlineStatus = "online"
     }
 
     // view-model
@@ -39,13 +39,13 @@ class FirstActivity : AppCompatActivity() {
             }
 
             if (Constants.isOnline(applicationContext)) {
-                thisVal = 1
+                onlineStatus = "online"
                 viewModel.lightspeed.observe(this@FirstActivity) { lightspeed ->
                     lightspeedAdapter.submitList(lightspeed)
                 }
 
             } else {
-                thisVal = 2
+                onlineStatus = "offline"
                 viewModel.lightspeed.observe(this@FirstActivity) { lightspeed ->
                     lightspeedAdapter.submitList(lightspeed)
 

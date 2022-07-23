@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_second.*
 class SecondActivity : AppCompatActivity() {
 
     companion object {
-        var onlineStatus = "online"                 // 1 = 'online-status' && 2 = 'offline'..
+        var onlineStatus = "online"
     }
 
     // view-model

@@ -27,7 +27,7 @@ class FirstViewModel @Inject constructor(
     init {
         viewModelScope.launch {
             // if online...
-            if (FirstActivity.thisVal == 1) {
+            if (FirstActivity.onlineStatus == "online") {
                 val lightspeed123 = withContext(Dispatchers.IO) {
                     dataRepository.getLightspeedFromAPI()
                 }
