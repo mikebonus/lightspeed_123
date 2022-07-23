@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.lightspeed.lightspeedproject.adapter.LightspeedAdapter
 import com.lightspeed.lightspeedproject.databinding.ActivityFirstBinding
+import com.lightspeed.lightspeedproject.databinding.ActivitySecondBinding
 import com.lightspeed.lightspeedproject.util.Constants
+import com.lightspeed.lightspeedproject.viewmodel.FirstViewModel
 import com.lightspeed.lightspeedproject.viewmodel.SecondViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_second.*
@@ -22,16 +24,21 @@ class SecondActivity : AppCompatActivity() {
     }
 
     // view-model
+    private lateinit var binding: ActivitySecondBinding
+    private lateinit var lightspeedAdapter: LightspeedAdapter
     private val viewModel: SecondViewModel by viewModels()
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityFirstBinding.inflate(layoutInflater)
+        binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val lightspeedAdapter = LightspeedAdapter()
+        setupRecyclerView()
+    }
 
+    private fun setupRecyclerView() {
+        lightspeedAdapter = LightspeedAdapter()
         binding.apply {
             recyclerView.apply {
                 adapter = lightspeedAdapter
@@ -57,7 +64,6 @@ class SecondActivity : AppCompatActivity() {
             }
         }
     }
-
 
     override fun onDestroy() {
         super.onDestroy()

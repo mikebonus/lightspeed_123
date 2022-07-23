@@ -22,16 +22,23 @@ class FirstActivity : AppCompatActivity() {
     }
 
     // view-model
+    private lateinit var binding: ActivityFirstBinding
+    private lateinit var lightspeedAdapter: LightspeedAdapter
     private val viewModel: FirstViewModel by viewModels()
+
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityFirstBinding.inflate(layoutInflater)
+        binding = ActivityFirstBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val lightspeedAdapter = LightspeedAdapter()
+        setupRecyclerView()
 
+    }
+
+    private fun setupRecyclerView() {
+        lightspeedAdapter = LightspeedAdapter()
         binding.apply {
             recyclerView.apply {
                 adapter = lightspeedAdapter
