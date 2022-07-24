@@ -20,7 +20,7 @@
 <b>6)</b> This application handles memory-management. <br />
 <img width="500" alt="memory-management" src="https://user-images.githubusercontent.com/26533575/180626892-3f88cc8d-5eed-44e6-bbf5-719ac4848266.png">
 
-<b>7)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time complexity) <br />
+<b>7)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time (O(N)) complexity) <br />
 <img width="500" alt="parser" src="https://user-images.githubusercontent.com/26533575/180626991-8f0aa3ac-1401-4444-a79f-977394707fe3.png">
 
 <b>8)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle. </br> <br/>
