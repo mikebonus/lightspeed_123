@@ -1,8 +1,8 @@
 package com.lightspeed.domain.repository
 
-import com.lightspeed.data.api.SecondApi
-import com.lightspeed.domain.data.Lightspeed
-import com.lightspeed.domain.data.LightspeedDatabase
+import com.lightspeed.data.remote.SecondApi
+import com.lightspeed.domain.model.Lightspeed
+import com.lightspeed.data.local.LightspeedDatabase
 import javax.inject.Inject
 
 class SecondRepository @Inject constructor(

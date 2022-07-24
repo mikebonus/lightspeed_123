@@ -1,4 +1,4 @@
-package com.lightspeed.domain.data
+package com.lightspeed.domain.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

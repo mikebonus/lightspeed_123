@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.lightspeed.domain.data.Lightspeed
-import com.lightspeed.domain.data.LightspeedDao
-import com.lightspeed.domain.data.LightspeedDatabase
+import com.lightspeed.domain.model.Lightspeed
+import com.lightspeed.data.local.LightspeedDao
+import com.lightspeed.data.local.LightspeedDatabase
 import junit.framework.TestCase
 import kotlinx.coroutines.runBlocking
 import org.junit.After

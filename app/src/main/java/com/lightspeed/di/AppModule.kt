@@ -1,9 +1,9 @@
-package com.lightspeed.util.di
+package com.lightspeed.di
 
 import android.app.Application
 import androidx.room.Room
-import com.lightspeed.data.api.FirstApi
-import com.lightspeed.domain.data.LightspeedDatabase
+import com.lightspeed.data.remote.FirstApi
+import com.lightspeed.data.local.LightspeedDatabase
 import com.lightspeed.util.Constants
 import dagger.Module
 import dagger.Provides

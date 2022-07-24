@@ -1,18 +1,20 @@
-package com.lightspeed.data.api.implementation
+package com.lightspeed.data.implementation
 
-import com.lightspeed.data.api.FirstApi
-import com.lightspeed.domain.data.Lightspeed
+import com.lightspeed.data.remote.SecondApi
+import com.lightspeed.domain.model.Lightspeed
 import com.lightspeed.util.Constants
 import org.json.JSONArray
 import java.io.BufferedInputStream
 import java.net.URL
+import kotlin.random.Random
 
-class FirstParsingImpl : FirstApi {
+class SecondParsingImpl : SecondApi {
 
     var jsonArraySize = ""
 
-    // GET-DATA()
-    override suspend fun getNormalData(): List<Lightspeed> {
+    // RANDOM-ITEM()
+    // (at BOTTOM)
+    override suspend fun getLightspeed(): List<Lightspeed> {
 
         val url = URL(Constants.BASE_URL)
         val connection = url.openConnection()
@@ -29,6 +31,7 @@ class FirstParsingImpl : FirstApi {
         bufferedReader.close()
         val fullJson = stringBuffer.toString()
 
+        // JSON-Parsing
         val jsonObjectLightspeed = JSONArray(fullJson)
         jsonArraySize = jsonObjectLightspeed.length().toString()
         val listOne = arrayListOf<Lightspeed>()
@@ -59,9 +62,22 @@ class FirstParsingImpl : FirstApi {
             // OBJECT
             val thisLightspeed = Lightspeed(id, author, refinedDownloadURL)
             listOne.add(thisLightspeed)
+
         }
 
+        // RANDOM-ITEM AT THE BOTTOM
+        var randomNo = randomNumberGenerator(0, Integer.parseInt(jsonArraySize))
+        var thisFetchedNo = listOne.get(randomNo)
+            listOne.remove(listOne.get(randomNo))
+            listOne.add(thisFetchedNo)
+
         return listOne
+    }
+
+    // to have a randomly-selected item at the bottom of the list
+    private fun randomNumberGenerator (start: Int, end: Int): Int {
+        require(start <= end) { "Illegal Argument" }
+        return Random(System.nanoTime()).nextInt(start, Integer.parseInt(jsonArraySize))
     }
 
     // to remove 'back-slash' in the link

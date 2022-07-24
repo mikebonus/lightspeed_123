@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.lightspeed.data.api.implementation.FirstParsingImpl
-import com.lightspeed.domain.data.Lightspeed
-import com.lightspeed.domain.data.LightspeedDatabase
+import com.lightspeed.data.implementation.FirstParsingImpl
+import com.lightspeed.domain.model.Lightspeed
+import com.lightspeed.data.local.LightspeedDatabase
 import com.lightspeed.domain.repository.FirstRepository
 import com.lightspeed.presentation.ui.FirstActivity
 import dagger.hilt.android.lifecycle.HiltViewModel

@@ -1,7 +1,8 @@
-package com.lightspeed.domain.data
+package com.lightspeed.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.lightspeed.domain.model.Lightspeed
 
 @Database(
     entities = [Lightspeed::class],
