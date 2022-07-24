@@ -20,10 +20,13 @@
 <b>6)</b> This application handles memory-management. <br />
 <img width="500" alt="memory-management" src="https://user-images.githubusercontent.com/26533575/180626892-3f88cc8d-5eed-44e6-bbf5-719ac4848266.png">
 
-<b>7)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle. </br> <br/>
+<b>7)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time complexity) <br />
+<img width="500" alt="parser" src="https://user-images.githubusercontent.com/26533575/180626991-8f0aa3ac-1401-4444-a79f-977394707fe3.png">
+
+<b>8)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle. </br> <br/>
 <img width="237" alt="offline_caching" src="https://user-images.githubusercontent.com/26533575/180626912-7c34707a-ed00-4aeb-b79a-c765fb0851ed.png">
 
-<b>8)</b> This application has a feature where the a randomly selected item goes to the bottom of the list (CLICK "RANDOM" BUTTON for reference). </br> <br/>
+<b>9)</b> This application has a feature where the a randomly selected item goes to the bottom of the list (CLICK "RANDOM" BUTTON for reference). </br> <br/>
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180626939-fa3aa5e2-45df-4cd9-b694-67cd376d9e43.png">
 
 
