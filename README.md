@@ -12,7 +12,7 @@
 <img width="237" alt="detailScreen" src="https://user-images.githubusercontent.com/26533575/180651648-02483916-6fc9-4219-a8d1-a7f7e72d746f.png">
 
 <b>4)</b> This application notifies the user when there is a poor network condition. <br/>
-<img width="237" alt="offline-message" src="https://user-images.githubusercontent.com/26533575/180627160-49717425-11c5-4c8a-9603-d1879b5792df.png">
+<img width="237" alt="offline-message" src="https://user-images.githubusercontent.com/26533575/180657457-e6e14a69-363b-4ab7-bb38-8c4c762f2ca1.png">
 
 <b>5)</b> This system contains one successful unit-test. <br/>
 <img width="500" alt="unit-test" src="https://user-images.githubusercontent.com/26533575/180626871-4ee78fde-db9e-4ca1-b1a8-433ea070dfb1.png">
