@@ -8,16 +8,16 @@
 <b>2)</b> This application retrieves all the data from a remote data source (REST-API: https://picsum.photos/v2/list). <br/>
 <img width="237" alt="first_activity" src="https://user-images.githubusercontent.com/26533575/180626847-5f71cbfd-6f97-4762-879a-9c3cfc0578fa.png">
 
-<b>3)</b> This application notifies the user when there is a poor network condition. <br/>
+<b>3)</b> This application notifies the user when there is a poor network condition. (CLICK THE IMAGE FOR THE LARGE IMAGE) <br/>
 <img width="237" alt="offline-message" src="https://user-images.githubusercontent.com/26533575/180627160-49717425-11c5-4c8a-9603-d1879b5792df.png">
 
-<b>4)</b> This system contains one successful unit-test. <br/>
+<b>4)</b> This system contains one successful unit-test. (CLICK THE IMAGE FOR THE LARGE IMAGE)<br/>
 <img width="500" alt="unit-test" src="https://user-images.githubusercontent.com/26533575/180626871-4ee78fde-db9e-4ca1-b1a8-433ea070dfb1.png">
 
-<b>5)</b> This application enables screen-rotation.<br />
+<b>5)</b> This application enables screen-rotation. (CLICK THE IMAGE FOR THE LARGE IMAGE)<br />
 <img width="500" alt="screen_rotation" src="https://user-images.githubusercontent.com/26533575/180626877-521cfa60-ae60-40a6-be49-71f67d8393c8.png">
 
-<b>6)</b> This application handles memory-management. <br />
+<b>6)</b> This application handles memory-management. (CLICK THE IMAGE FOR THE LARGE IMAGE)<br />
 <img width="500" alt="memory-management" src="https://user-images.githubusercontent.com/26533575/180626892-3f88cc8d-5eed-44e6-bbf5-719ac4848266.png">
 
 <b>7)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time (O(N)) complexity) <br />
