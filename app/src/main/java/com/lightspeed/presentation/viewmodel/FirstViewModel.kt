@@ -1,14 +1,14 @@
-package com.lightspeed.lightspeedproject.viewmodel
+package com.lightspeed.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.lightspeed.lightspeedproject.api.implementation.FirstParsingImpl
-import com.lightspeed.lightspeedproject.data.Lightspeed
-import com.lightspeed.lightspeedproject.data.LightspeedDatabase
-import com.lightspeed.lightspeedproject.repository.FirstRepository
-import com.lightspeed.lightspeedproject.ui.FirstActivity
+import com.lightspeed.data.api.implementation.FirstParsingImpl
+import com.lightspeed.domain.data.Lightspeed
+import com.lightspeed.domain.data.LightspeedDatabase
+import com.lightspeed.domain.repository.FirstRepository
+import com.lightspeed.presentation.ui.FirstActivity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

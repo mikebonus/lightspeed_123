@@ -1,4 +1,4 @@
-package com.lightspeed.lightspeedproject
+package com.lightspeed
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

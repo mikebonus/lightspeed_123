@@ -1,4 +1,4 @@
-package com.lightspeed.lightspeedproject.ui
+package com.lightspeed.presentation.ui
 
 import android.os.Build
 import android.os.Bundle
@@ -7,34 +7,32 @@ import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.lightspeed.lightspeedproject.adapter.LightspeedAdapter
-import com.lightspeed.lightspeedproject.databinding.ActivityFirstBinding
-import com.lightspeed.lightspeedproject.util.Constants
-import com.lightspeed.lightspeedproject.viewmodel.FirstViewModel
+import com.lightspeed.presentation.adapter.LightspeedAdapter
+import com.lightspeed.lightspeedproject.databinding.ActivitySecondBinding
+import com.lightspeed.util.Constants
+import com.lightspeed.presentation.viewmodel.SecondViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_second.recycler_View
+import kotlinx.android.synthetic.main.activity_second.*
 
 @AndroidEntryPoint
-class FirstActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
 
     companion object {
         var onlineStatus = "online"
     }
 
     // view-model
-    private lateinit var binding: ActivityFirstBinding
+    private lateinit var binding: ActivitySecondBinding
     private lateinit var lightspeedAdapter: LightspeedAdapter
-    private val viewModel: FirstViewModel by viewModels()
-
+    private val viewModel: SecondViewModel by viewModels()
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityFirstBinding.inflate(layoutInflater)
+        binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setupRecyclerView()
-
     }
 
     private fun setupRecyclerView() {
@@ -42,25 +40,24 @@ class FirstActivity : AppCompatActivity() {
         binding.apply {
             recyclerView.apply {
                 adapter = lightspeedAdapter
-                layoutManager = LinearLayoutManager(this@FirstActivity)
+                layoutManager = LinearLayoutManager(this@SecondActivity)
             }
 
             if (Constants.isOnline(applicationContext)) {
                 onlineStatus = "online"
-                viewModel.lightspeed.observe(this@FirstActivity) { lightspeed ->
-                    lightspeedAdapter.submitList(lightspeed)
+                viewModel.lightspeed.observe(this@SecondActivity) { employees ->
+                    lightspeedAdapter.submitList(employees)
                 }
 
             } else {
                 onlineStatus = "offline"
-                viewModel.lightspeed.observe(this@FirstActivity) { lightspeed ->
-                    lightspeedAdapter.submitList(lightspeed)
+                viewModel.lightspeed.observe(this@SecondActivity) { employees ->
+                    lightspeedAdapter.submitList(employees)
 
                     Toast.makeText(
                         applicationContext,
                         "Network is online... ",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                        Toast.LENGTH_SHORT).show()
                 }
             }
         }

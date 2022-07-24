@@ -1,4 +1,4 @@
-package com.lightspeed.lightspeedproject.util
+package com.lightspeed.util
 
 sealed class Resource<T>(
     val data: T? = null,

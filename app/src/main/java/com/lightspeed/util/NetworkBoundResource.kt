@@ -1,4 +1,4 @@
-package com.lightspeed.lightspeedproject.util
+package com.lightspeed.util
 
 import kotlinx.coroutines.flow.*
 

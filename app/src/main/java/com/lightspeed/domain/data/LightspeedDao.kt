@@ -1,4 +1,4 @@
-package com.lightspeed.lightspeedproject.data
+package com.lightspeed.domain.data
 
 import androidx.room.Dao
 import androidx.room.Insert

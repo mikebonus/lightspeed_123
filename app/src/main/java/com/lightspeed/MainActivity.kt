@@ -1,10 +1,11 @@
-package com.lightspeed.lightspeedproject
+package com.lightspeed
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.lightspeed.lightspeedproject.ui.FirstActivity
-import com.lightspeed.lightspeedproject.ui.SecondActivity
+import com.lightspeed.lightspeedproject.R
+import com.lightspeed.presentation.ui.FirstActivity
+import com.lightspeed.presentation.ui.SecondActivity
 import kotlinx.android.synthetic.main.activity_launcher.*
 
 class MainActivity : AppCompatActivity() {

@@ -1,21 +1,21 @@
-package com.lightspeed.lightspeedproject.repository
+package com.lightspeed.domain.repository
 
-import com.lightspeed.lightspeedproject.api.FirstApi
-import com.lightspeed.lightspeedproject.data.Lightspeed
-import com.lightspeed.lightspeedproject.data.LightspeedDatabase
+import com.lightspeed.data.api.SecondApi
+import com.lightspeed.domain.data.Lightspeed
+import com.lightspeed.domain.data.LightspeedDatabase
 import javax.inject.Inject
 
-class FirstRepository @Inject constructor(
+class SecondRepository @Inject constructor(
     private val db: LightspeedDatabase,
-    private val api: FirstApi,
+    private val api: SecondApi,
 ) {
 
     private val lightspeedDao = db.lightspeedDao()
 
     suspend fun getLightspeedFromAPI(): List<Lightspeed> {
-        if (api.getNormalData() != null) {
+        if (api.getLightspeed() != null) {
             lightspeedDao.deleteAllLightspeed()
-            lightspeedDao.insertLightspeed(api.getNormalData())
+            lightspeedDao.insertLightspeed(api.getLightspeed())
         }
 
         return lightspeedDao.getAllLightspeed()

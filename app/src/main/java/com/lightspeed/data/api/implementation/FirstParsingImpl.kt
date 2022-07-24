@@ -1,13 +1,11 @@
-package com.lightspeed.lightspeedproject.api.implementation
+package com.lightspeed.data.api.implementation
 
-import android.util.Log
-import com.lightspeed.lightspeedproject.api.FirstApi
-import com.lightspeed.lightspeedproject.data.Lightspeed
-import com.lightspeed.lightspeedproject.util.Constants
+import com.lightspeed.data.api.FirstApi
+import com.lightspeed.domain.data.Lightspeed
+import com.lightspeed.util.Constants
 import org.json.JSONArray
 import java.io.BufferedInputStream
 import java.net.URL
-import kotlin.random.Random
 
 class FirstParsingImpl : FirstApi {
 

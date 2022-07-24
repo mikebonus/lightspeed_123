@@ -1,13 +1,12 @@
-package com.lightspeed.lightspeedproject.viewmodel
+package com.lightspeed.presentation.viewmodel
 
 import android.content.Context
-import android.util.Log
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.lightspeed.lightspeedproject.data.Lightspeed
-import com.lightspeed.lightspeedproject.data.LightspeedDao
-import com.lightspeed.lightspeedproject.data.LightspeedDatabase
+import com.lightspeed.domain.data.Lightspeed
+import com.lightspeed.domain.data.LightspeedDao
+import com.lightspeed.domain.data.LightspeedDatabase
 import junit.framework.TestCase
 import kotlinx.coroutines.runBlocking
 import org.junit.After
