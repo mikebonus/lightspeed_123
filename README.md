@@ -23,7 +23,7 @@
 <b>7)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time (O(N)) complexity) <br />
 <img width="500" alt="parser" src="https://user-images.githubusercontent.com/26533575/180626991-8f0aa3ac-1401-4444-a79f-977394707fe3.png">
 
-<b>8)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle. </br> 
+<b>8)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle (https://medium.com/@sina.rahimi/single-source-of-truth-with-mvvm-retrofit2-livedata-rxjava-and-room-in-repository-pattern-f5304f39175). </br> 
 <img width="237" alt="offline_caching" src="https://user-images.githubusercontent.com/26533575/180626912-7c34707a-ed00-4aeb-b79a-c765fb0851ed.png">
 
 <b>9)</b> This application has a feature where the a randomly selected item goes to the bottom of the list (CLICK "RANDOM" BUTTON for reference). </br> 
