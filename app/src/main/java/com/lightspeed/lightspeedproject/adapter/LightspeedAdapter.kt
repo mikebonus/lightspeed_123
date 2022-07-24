@@ -1,16 +1,22 @@
 package com.lightspeed.lightspeedproject.adapter
 
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.lightspeed.lightspeedproject.data.Lightspeed
 import com.lightspeed.lightspeedproject.databinding.NewsItemBinding
+import com.lightspeed.lightspeedproject.ui.DetailActivity
 
 class LightspeedAdapter : ListAdapter<Lightspeed,
         LightspeedAdapter.LightspeedViewHolder>(LightspeedComparators()) {
+
+    val TAG = "TAG"
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LightspeedViewHolder {
         val binding = NewsItemBinding
@@ -25,6 +31,13 @@ class LightspeedAdapter : ListAdapter<Lightspeed,
         val currentItem = getItem(position)
         if (currentItem != null) {
             holder.bind(currentItem)
+        }
+
+        holder.itemView.setOnClickListener {
+            val intentData = Intent(holder.itemView.context, DetailActivity::class.java)
+            intentData.putExtra("author", currentItem?.author)
+            intentData.putExtra("download_url", currentItem?.download_url)
+            ContextCompat.startActivity(holder.itemView.context, intentData, null)
         }
     }
 

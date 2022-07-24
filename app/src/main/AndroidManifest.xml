@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.lightspeed.lightspeedproject.ui.SecondActivity"></activity>
+        <activity android:name=".ui.DetailActivity"></activity>
     </application>
 
 </manifest>
