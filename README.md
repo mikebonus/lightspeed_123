@@ -20,20 +20,17 @@
 <b>6)</b> This application enables screen-rotation. <br />
 <img width="500" alt="screen_rotation" src="https://user-images.githubusercontent.com/26533575/180626877-521cfa60-ae60-40a6-be49-71f67d8393c8.png">
 
-<b>7)</b> This application handles memory-management. <br />
-<img width="500" alt="memory-management" src="https://user-images.githubusercontent.com/26533575/180626892-3f88cc8d-5eed-44e6-bbf5-719ac4848266.png">
-
-<b>8)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time (O(N)) complexity) <br />
+<b>7)</b> This appliation successfully parses data from the server (several custom functions were manually created & all run in linear time (O(N)) complexity) <br />
 <img width="500" alt="parser" src="https://user-images.githubusercontent.com/26533575/180626991-8f0aa3ac-1401-4444-a79f-977394707fe3.png">
 
-<b>9)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle (https://medium.com/@sina.rahimi/single-source-of-truth-with-mvvm-retrofit2-livedata-rxjava-and-room-in-repository-pattern-f5304f39175). </br> 
+<b>8)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle (https://medium.com/@sina.rahimi/single-source-of-truth-with-mvvm-retrofit2-livedata-rxjava-and-room-in-repository-pattern-f5304f39175). </br> 
 <img width="237" alt="offline_caching" src="https://user-images.githubusercontent.com/26533575/180626912-7c34707a-ed00-4aeb-b79a-c765fb0851ed.png">
 
-<b>10)</b> This application adopts code-optimization, efficient unused-class management, and code obfuscation for SECURITY purposes. </br>
+<b>9)</b> This application adopts code-optimization, efficient unused-class management, and code obfuscation for SECURITY purposes. </br>
 <img width="500" alt="security" src="https://user-images.githubusercontent.com/26533575/180631529-a73af4bf-9145-4eef-845b-268fdb62def5.png">
 <img width="500" alt="security-2" src="https://user-images.githubusercontent.com/26533575/180631546-6ac69877-da6f-474b-9e99-ce82dd6f5e5b.png">
 
-<b>11) This application has a feature where the a randomly selected item goes to the bottom of the list (PLEASE CLICK THE "RANDOM" BUTTON ON THE MAIN SCREEN for THIS FEATURE).</b> </br> 
+<b>10) This application has a feature where the a randomly selected item goes to the bottom of the list (PLEASE CLICK THE "RANDOM" BUTTON ON THE MAIN SCREEN for THIS FEATURE).</b> </br> 
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180627141-fc6e91a9-c7a4-4b61-8a82-4e89c1281edc.png">
 
 
