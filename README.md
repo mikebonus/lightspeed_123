@@ -36,9 +36,6 @@
 <b>11) This application has a feature where the a randomly selected item goes to the bottom of the list (PLEASE CLICK THE "RANDOM" BUTTON ON THE MAIN SCREEN for THIS FEATURE).</b> </br> 
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180627141-fc6e91a9-c7a4-4b61-8a82-4e89c1281edc.png">
 
-<b>12) This application has the clean-architecture-packaging structure for organizing files. </b> </br> 
-<img width="500" alt="clean-architecture-packaging" src="https://user-images.githubusercontent.com/26533575/180652284-d6c82a6f-da00-449a-af2a-3a122d1cc364.png">
-
 
 <b> --------------------PLEASE CLEAN THE PROJECT + REBUILD THE PROJECT BEFORE running the application--------------------- </b>
 
