@@ -11,9 +11,7 @@ import kotlin.random.Random
 
 class FirstParsingImpl : FirstApi {
 
-    val TAG = "TAG"
     var jsonArraySize = ""
-
 
     // GET-DATA()
     override suspend fun getNormalData(): List<Lightspeed> {
@@ -38,13 +36,11 @@ class FirstParsingImpl : FirstApi {
         val listOne = arrayListOf<Lightspeed>()
 
         for (i in 0 until jsonObjectLightspeed.length()) {
-
             // ID
             var id = jsonObjectLightspeed.get(i).toString()
                 .substringBefore("author")
                 .substring(7, jsonObjectLightspeed.get(i).toString()
                     .substringBefore("author").length - 3)
-            Log.d(TAG, "new-id-abc: ---> $id")
 
 
             // AUTHOR-NAME
@@ -54,7 +50,6 @@ class FirstParsingImpl : FirstApi {
                 .substring(3, jsonObjectLightspeed.get(i).toString()
                         .substringBefore("width")
                         .substringAfter("author").length - 3)
-            Log.d(TAG, "author-name1234: ---> $author")
 
 
             // DOWNLOAD-URL
@@ -63,19 +58,15 @@ class FirstParsingImpl : FirstApi {
                     .substringAfter("download_url")
                     .substring(3, jsonObjectLightspeed.get(i).toString()
                     .substringAfter("download_url").length - 2)).toString()
-            Log.d(TAG, "refined_download_url ---> $refinedDownloadURL")
 
 
             val thisLightspeed = Lightspeed(id, author, refinedDownloadURL)
             listOne.add(thisLightspeed)
-
         }
-
         return listOne
     }
 
 
-    // REFINE the DOWNLOADED-URL-LINK
     private fun refineImageLink(oldString: String): String? {
         val sb = StringBuilder()
         val oldStrChar = oldString.toCharArray()
@@ -84,12 +75,9 @@ class FirstParsingImpl : FirstApi {
                 oldStrChar[i] = ' '
             }
         }
-
         for (i in oldStrChar.indices) {
             sb.append(oldStrChar[i])
         }
-
         return sb.toString().replace("\\s".toRegex(), "")
-
     }
 }
