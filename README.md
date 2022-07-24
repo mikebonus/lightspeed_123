@@ -33,7 +33,7 @@
 <img width="500" alt="security" src="https://user-images.githubusercontent.com/26533575/180631529-a73af4bf-9145-4eef-845b-268fdb62def5.png">
 <img width="500" alt="security-2" src="https://user-images.githubusercontent.com/26533575/180631546-6ac69877-da6f-474b-9e99-ce82dd6f5e5b.png">
 
-<b>11)</b> This application has a feature where the a randomly selected item goes to the bottom of the list (CLICK "RANDOM" BUTTON for reference). </br> 
+<b>11) This application has a feature where the a randomly selected item goes to the bottom of the list (CLICK "RANDOM" BUTTON for reference).</b> </br> 
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180627141-fc6e91a9-c7a4-4b61-8a82-4e89c1281edc.png">
 
 
