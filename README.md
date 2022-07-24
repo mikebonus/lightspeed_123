@@ -33,6 +33,9 @@
 <b>10)</b> This application has a feature where the a randomly selected item goes to the bottom of the list (CLICK "RANDOM" BUTTON for reference). </br> 
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180627141-fc6e91a9-c7a4-4b61-8a82-4e89c1281edc.png">
 
+<b>10)</b> This application features a detail screen for each of the list item. </br> 
+<img width="237" alt="detailScreen" src="https://user-images.githubusercontent.com/26533575/180651648-02483916-6fc9-4219-a8d1-a7f7e72d746f.png">
+
 
 <b> --------------------PLEASE CLEAN THE PROJECT + REBUILD THE PROJECT BEFORE running the application--------------------- </b>
 
