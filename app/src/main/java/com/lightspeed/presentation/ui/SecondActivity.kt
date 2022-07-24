@@ -56,7 +56,7 @@ class SecondActivity : AppCompatActivity() {
 
                     Toast.makeText(
                         applicationContext,
-                        "Network is online... ",
+                        "Network is offline... ",
                         Toast.LENGTH_SHORT).show()
                 }
             }
