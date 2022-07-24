@@ -26,7 +26,7 @@
 <b>8)</b> This application enables <b> local caching for <b>[AIRPLANE-MODE]</b> </b> based on the single source of truth principle (https://medium.com/@sina.rahimi/single-source-of-truth-with-mvvm-retrofit2-livedata-rxjava-and-room-in-repository-pattern-f5304f39175). </br> 
 <img width="237" alt="offline_caching" src="https://user-images.githubusercontent.com/26533575/180626912-7c34707a-ed00-4aeb-b79a-c765fb0851ed.png">
 
-<b>9)</b> This application adopts code-optimization, efficient unused-class management, and code obfuscation for SECURITY </br>
+<b>9)</b> This application adopts code-optimization, efficient unused-class management, and code obfuscation for SECURITY purposes. </br>
 <img width="500" alt="security" src="https://user-images.githubusercontent.com/26533575/180631529-a73af4bf-9145-4eef-845b-268fdb62def5.png">
 <img width="500" alt="security-2" src="https://user-images.githubusercontent.com/26533575/180631546-6ac69877-da6f-474b-9e99-ce82dd6f5e5b.png">
 
