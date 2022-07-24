@@ -1,6 +1,7 @@
-package com.lightspeed.lightspeedproject.api
+package com.lightspeed.lightspeedproject.api.implementation
 
 import android.util.Log
+import com.lightspeed.lightspeedproject.api.FirstApi
 import com.lightspeed.lightspeedproject.data.Lightspeed
 import com.lightspeed.lightspeedproject.util.Constants
 import org.json.JSONArray
@@ -8,7 +9,7 @@ import java.io.BufferedInputStream
 import java.net.URL
 import kotlin.random.Random
 
-class ParsingImpl : LightspeedApi {
+class FirstParsingImpl : FirstApi {
 
     val TAG = "TAG"
     var jsonArraySize = ""
@@ -71,87 +72,6 @@ class ParsingImpl : LightspeedApi {
         }
 
         return listOne
-    }
-
-
-    // RANDOM-ITEM()
-    // (at BOTTOM)
-    override suspend fun getLightspeed(): List<Lightspeed> {
-
-        val url = URL(Constants.BASE_URL)
-        val connection = url.openConnection()
-        connection.connect()
-
-        val bufferedInputStream = BufferedInputStream(connection.getInputStream())
-        val bufferedReader = bufferedInputStream.bufferedReader()
-
-        val stringBuffer = StringBuffer()
-        for (line in bufferedReader.readLines()) {
-            stringBuffer.append(line)
-        }
-
-        bufferedReader.close()
-        val fullJson = stringBuffer.toString()
-
-        // JSON-Parsing
-        val jsonObjectLightspeed = JSONArray(fullJson)
-        jsonArraySize = jsonObjectLightspeed.length().toString()
-        val listOne = arrayListOf<Lightspeed>()
-
-        for (i in 0 until jsonObjectLightspeed.length()) {
-
-            // ID
-            var id = jsonObjectLightspeed.get(i).toString()
-                .substringBefore("author")
-                .substring(7, jsonObjectLightspeed.get(i).toString()
-                    .substringBefore("author").length - 3)
-            Log.d(TAG, "new-id-abc: ---> $id")
-
-
-            // AUTHOR-NAME
-            var author = jsonObjectLightspeed.get(i).toString()
-                .substringBefore("width")
-                .substringAfter("author")
-                .substring(3, jsonObjectLightspeed.get(i).toString()
-                    .substringBefore("width")
-                    .substringAfter("author").length - 3)
-            Log.d(TAG, "author-name1234: ---> $author")
-
-
-            // DOWNLOAD-URL
-            var refinedDownloadURL = refineImageLink(
-                jsonObjectLightspeed.get(i).toString()
-                    .substringAfter("download_url")
-                    .substring(3, jsonObjectLightspeed.get(i).toString()
-                        .substringAfter("download_url").length - 2)).toString()
-            Log.d(TAG, "refined_download_url ---> $refinedDownloadURL")
-
-
-            // OBJECT
-            val thisLightspeed = Lightspeed(id, author, refinedDownloadURL)
-            listOne.add(thisLightspeed)
-
-        }
-
-        // RANDOM-ITEM AT THE BOTTOM
-        var randomNo = randomNumberGenerator(0, Integer.parseInt(jsonArraySize))
-
-        var thisFetchedNo = listOne.get(randomNo)
-            listOne.remove(listOne.get(randomNo))
-            listOne.add(thisFetchedNo)
-
-        Log.d(TAG, "json-array-size ----> $jsonArraySize")
-        Log.d(TAG, "listOne ----> $listOne")
-
-        return listOne
-
-    }
-
-
-    // RandomNumberGenerator()..
-    private fun randomNumberGenerator (start: Int, end: Int): Int {
-        require(start <= end) { "Illegal Argument" }
-        return Random(System.nanoTime()).nextInt(start, Integer.parseInt(jsonArraySize))
     }
 
 

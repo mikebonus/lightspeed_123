@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.lightspeed.lightspeedproject.api.ParsingImpl
+import com.lightspeed.lightspeedproject.api.implementation.SecondParsingImpl
 import com.lightspeed.lightspeedproject.data.Lightspeed
 import com.lightspeed.lightspeedproject.data.LightspeedDatabase
 import com.lightspeed.lightspeedproject.repository.SecondRepository
@@ -20,7 +20,7 @@ class SecondViewModel @Inject constructor(
     db: LightspeedDatabase
 ) : ViewModel() {
 
-    private val dataRepository = SecondRepository(db, ParsingImpl())
+    private val dataRepository = SecondRepository(db, SecondParsingImpl())
     private val lightspeedLiveData = MutableLiveData<List<Lightspeed>>()
     val lightspeed: LiveData<List<Lightspeed>> = lightspeedLiveData
 

@@ -2,13 +2,9 @@ package com.lightspeed.lightspeedproject.api
 
 import com.lightspeed.lightspeedproject.data.Lightspeed
 
-interface LightspeedApi {
+interface FirstApi {
 
     // GET-DATA()
     suspend fun getNormalData(): List<Lightspeed>
-
-    // RANDOM-ITEM()
-    // (at BOTTOM)
-    suspend fun getLightspeed(): List<Lightspeed>
 
 }

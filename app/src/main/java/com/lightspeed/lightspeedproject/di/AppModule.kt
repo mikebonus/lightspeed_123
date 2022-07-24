@@ -2,7 +2,7 @@ package com.lightspeed.lightspeedproject.di
 
 import android.app.Application
 import androidx.room.Room
-import com.lightspeed.lightspeedproject.api.LightspeedApi
+import com.lightspeed.lightspeedproject.api.FirstApi
 import com.lightspeed.lightspeedproject.data.LightspeedDatabase
 import com.lightspeed.lightspeedproject.util.Constants
 import dagger.Module
@@ -27,8 +27,8 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRestaurantApi(retrofit: Retrofit): LightspeedApi =
-        retrofit.create(LightspeedApi::class.java)
+    fun provideRestaurantApi(retrofit: Retrofit): FirstApi =
+        retrofit.create(FirstApi::class.java)
 
     // MODULE #3: d/b instance
     @Provides

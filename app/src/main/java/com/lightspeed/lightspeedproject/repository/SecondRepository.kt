@@ -1,13 +1,13 @@
 package com.lightspeed.lightspeedproject.repository
 
-import com.lightspeed.lightspeedproject.api.LightspeedApi
+import com.lightspeed.lightspeedproject.api.SecondApi
 import com.lightspeed.lightspeedproject.data.Lightspeed
 import com.lightspeed.lightspeedproject.data.LightspeedDatabase
 import javax.inject.Inject
 
 class SecondRepository @Inject constructor(
     private val db: LightspeedDatabase,
-    private val api: LightspeedApi,
+    private val api: SecondApi,
 ) {
 
     private val lightspeedDao = db.lightspeedDao()
