@@ -21,8 +21,6 @@ class DetailActivity : AppCompatActivity() {
 
         Glide.with(img_output_img)
             .load(intentReceivedDownloadUrl)
-            .placeholder(R.drawable.photols)
-            .error(R.drawable.photols)
             .into(img_output_img)
 
         tv_output_text.text = intentReceivedExpenseAuthor

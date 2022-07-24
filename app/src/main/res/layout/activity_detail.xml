@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/img_output_img"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="Expense Details"
                 android:textColor="@color/black"
