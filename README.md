@@ -5,7 +5,7 @@
 <b>1)</b> This application is based on <b>MVVM</b> design architecture (<b>100% in Kotlin</b>). <br/>
 <img width="237" alt="title" src="https://user-images.githubusercontent.com/26533575/180626845-79111cf0-362c-4e88-8d0f-9aecb4e238b5.png">
 
-<b>2)</b> This application retrieves news data from a remote data source (REST-API: https://picsum.photos/v2/list). <br/>
+<b>2)</b> This application retrieves all the data from a remote data source (REST-API: https://picsum.photos/v2/list). <br/>
 <img width="237" alt="first_activity" src="https://user-images.githubusercontent.com/26533575/180626847-5f71cbfd-6f97-4762-879a-9c3cfc0578fa.png">
 
 <b>3)</b> This application notifies the user when there is a poor network condition. <br/>
