@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/lightspeedlogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SimpleCachingExample">
+        android:theme="@style/Theme.Lightspeed">
         <activity android:name="com.lightspeed.presentation.ui.FirstActivity"></activity>
         <activity android:name="com.lightspeed.MainActivity">
             <intent-filter>

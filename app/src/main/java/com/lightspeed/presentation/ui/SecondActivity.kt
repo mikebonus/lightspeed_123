@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.lightspeed.lightspeedproject.R
 import com.lightspeed.presentation.adapter.LightspeedAdapter
 import com.lightspeed.lightspeedproject.databinding.ActivitySecondBinding
 import com.lightspeed.util.Constants
@@ -44,19 +45,17 @@ class SecondActivity : AppCompatActivity() {
             }
 
             if (Constants.isOnline(applicationContext)) {
-                onlineStatus = "online"
+                onlineStatus = getString(R.string.online)
                 viewModel.lightspeed.observe(this@SecondActivity) { employees ->
                     lightspeedAdapter.submitList(employees)
                 }
 
             } else {
-                onlineStatus = "offline"
+                onlineStatus = getString(R.string.offline)
                 viewModel.lightspeed.observe(this@SecondActivity) { employees ->
                     lightspeedAdapter.submitList(employees)
-
-                    Toast.makeText(
-                        applicationContext,
-                        "Network is offline... ",
+                    Toast.makeText(applicationContext,
+                        getString(R.string.network_is_offline),
                         Toast.LENGTH_SHORT).show()
                 }
             }
