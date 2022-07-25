@@ -30,7 +30,10 @@
 <img width="500" alt="security" src="https://user-images.githubusercontent.com/26533575/180631529-a73af4bf-9145-4eef-845b-268fdb62def5.png">
 <img width="500" alt="security-2" src="https://user-images.githubusercontent.com/26533575/180631546-6ac69877-da6f-474b-9e99-ce82dd6f5e5b.png">
 
-<b>10) This application has a feature where the a randomly selected item goes to the bottom of the list (PLEASE CLICK THE "RANDOM" BUTTON ON THE MAIN SCREEN for THIS FEATURE).</b> </br> 
+<b>10)</b> This application handles memory management. </br>
+<img width="500" alt="memory-management" src="https://user-images.githubusercontent.com/26533575/180675775-07d67752-ff3a-45ac-8777-16945e5c67c6.png">
+
+<b>11) This application has a feature where the a randomly selected item goes to the bottom of the list (PLEASE CLICK THE "RANDOM" BUTTON ON THE MAIN SCREEN for THIS FEATURE).</b> </br> 
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180627141-fc6e91a9-c7a4-4b61-8a82-4e89c1281edc.png">
 
 
