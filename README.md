@@ -20,7 +20,7 @@
 <b>6)</b> This application enables screen-rotation. <br />
 <img width="500" alt="screen_rotation" src="https://user-images.githubusercontent.com/26533575/180626877-521cfa60-ae60-40a6-be49-71f67d8393c8.png">
 
-<b>7)</b> This appliation successfully parses data from the server. <br />
+<b>7)</b> This application successfully parses data from the server. <br />
 <img width="500" alt="parser" src="https://user-images.githubusercontent.com/26533575/180626991-8f0aa3ac-1401-4444-a79f-977394707fe3.png">
 
 <b>8)</b> This application enables offline caching when there is no network. </br> 
