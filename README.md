@@ -24,7 +24,7 @@
 <img width="500" alt="parser" src="https://user-images.githubusercontent.com/26533575/180626991-8f0aa3ac-1401-4444-a79f-977394707fe3.png">
 
 <b>8)</b> This application enables offline caching when there is no network. </br> 
-<img width="237" alt="offline_caching" src="https://user-images.githubusercontent.com/26533575/180626912-7c34707a-ed00-4aeb-b79a-c765fb0851ed.png">
+<img width="237" alt="offline-message" src="https://user-images.githubusercontent.com/26533575/180798221-5be96917-338a-48a8-b401-8fc7c50e84f1.png">
 
 <b>9)</b> This application adopts code-optimization and code obfuscation for SECURITY purposes. </br>
 <img width="500" alt="security" src="https://user-images.githubusercontent.com/26533575/180631529-a73af4bf-9145-4eef-845b-268fdb62def5.png">
