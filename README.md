@@ -36,6 +36,8 @@
 <b>11) This application has a feature where the a randomly selected item goes to the bottom of the list (PLEASE CLICK THE "RANDOM" BUTTON ON THE MAIN SCREEN for THIS FEATURE).</b> </br> 
 <img width="237" alt="second_activity" src="https://user-images.githubusercontent.com/26533575/180627141-fc6e91a9-c7a4-4b61-8a82-4e89c1281edc.png">
 
+<b>12) This application has numerous UI tests done using ESPRESSO.</b> </br> 
+<img width="600" alt="UI-TEST" src="https://user-images.githubusercontent.com/26533575/182466004-ad290860-fa2f-4be7-ac6d-e19853674a13.png">
 
 <b> --------------------PLEASE CLEAN THE PROJECT + REBUILD THE PROJECT BEFORE running the application--------------------- </b>
 
